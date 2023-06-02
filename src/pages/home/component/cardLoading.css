@@ -1,0 +1,30 @@
+.hide {
+    background: linear-gradient(to right, rgb(24 24 27) 25%,  rgb(39 39 42) 100%);
+    color: transparent;
+    position: relative;
+    overflow: hidden;
+  }
+  
+.hide::before {
+    content: "";
+    position: absolute;
+    left: 0%;
+    top: 0;
+    height: 100%;
+    width: 7px;
+    background: linear-gradient(to right, #e2e2e2 25%, #d5d5d5 50%, #e2e2e2 100%);
+    animation-name: gradient-animation;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    filter: blur(50px);
+  }
+  
+  @keyframes gradient-animation {
+    from {
+      left: -50%;
+    }
+    to {
+      left: 150%;
+    }
+  }
+  

@@ -1,0 +1,126 @@
+:root {
+  --color-white: #FFFFFF;
+  --color-black: #141414;
+  --color-gray: #808080;
+}
+
+html {
+  background-color: var(--color-black);
+  line-height: 2;
+}
+
+h1 {
+  font-size: 42px;
+  font-family: 'Open Sans', sans-serif;
+  color: var(--color-white);
+  text-align: center;
+}
+
+p {
+  color: var(--color-gray);
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.profile p {
+   margin-top: 1px;
+}
+
+img {
+   height: 35px;
+   width: auto;
+}
+
+.netflix-logo {
+   margin-top: 29px;
+   margin-left: 25px;
+   cursor: pointer;
+}
+
+.profile-lists {
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile {
+   border-radius: 10px;
+   border: 3px solid transparent;
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+  justify-content: center;
+}
+
+.profile-img {
+   width: 150px;
+   height: 150px;
+   border-radius: 8px;
+   cursor: pointer;
+}
+.profile-img:hover{
+  border: 3px solid var(--color-white);
+
+}
+
+
+.btn {
+  color: var(--color-gray);
+  background-color: var(--color-black);
+  cursor: pointer;
+  border: 2px solid var(--color-gray);
+  width: 218px;
+  height: 45px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0 auto;
+  display: grid;
+  place-items: center;
+  margin-top:  60px;
+}
+
+.btn:hover {
+  border: 2px solid var(--color-white);
+  color: var(--color-white);
+}
+
+
+/*  responsive */
+@media (max-width: 900px) {
+  .netflix-logo {
+        display: grid;
+        place-items: center;
+        margin: 0 auto;
+  }
+
+   .profile-lists {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      row-gap: 90px;
+      padding-bottom: 110px;
+    }
+  
+     .profile {
+       margin-top: 3rem;
+       column-gap: 6px;
+       margin: auto;
+     }
+
+   h1 {
+     text-align: center;
+     font-size: 35px;
+     margin-top: 150px;
+    }
+
+   .btn {
+     display: none; 
+    }
+}

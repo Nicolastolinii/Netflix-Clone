@@ -1,0 +1,14 @@
+.focused {
+  transform: translateY(-10px);
+  font-size: 12px;
+}
+
+.label {
+  position: absolute;
+  left: 10px;
+  top: 1rem;
+
+  pointer-events: none;
+  z-index: 10;
+  transition: all 0.2s ease-out;
+}
